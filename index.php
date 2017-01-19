@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Cadastro de Clientes</title>
+    <title>Lista de Clientes</title>
   </head>
   <body>
     <?php
-    require_once 'Cliente.php';
-    
-     ?>
+    require_once 'data/meusclientes.php';
+    print_r($todos_clientes);
+    ?>
   </body>
 </html>
