@@ -2,13 +2,14 @@
 
 class Cliente {
 
-  public $nome;
-  public $endereco;
-  public $numero;
-  public $bairro;
-  public $cep;
-  public $telefone;
-  public $email;
+  protected $nome;
+  protected $tipo;
+  protected $endereco;
+  protected $numero;
+  protected $bairro;
+  protected $cep;
+  protected $telefone;
+  protected $email;
 
   public function getNome(){
     return $this->nome;
@@ -16,6 +17,14 @@ class Cliente {
 
   public function setNome($nome){
     $this->nome = $nome;
+  }
+
+  public function getTipo(){
+    return $this->tipo;
+  }
+
+  public function setTipo($tipo){
+    $this->tipo = $tipo;
   }
 
   public function getEndereco(){

@@ -30,6 +30,7 @@
           <tr>
             <th>ID</th>
             <th>Nome</th>
+            <th>Tipo</th>
             <th>Mais</th>
           </tr>
         </thead>
@@ -38,6 +39,7 @@
             <tr>
               <td><?php echo $key; ?></td>
               <td><b><?php echo $cliente->getNome(); ?></b></td>
+              <td><b><?php echo $cliente->getTipo(); ?></b></td>
               <td><a href="fichacliente.php?id=<?php echo $key; ?>" class="btn btn-info"><i class="icon-folder-open"></i>&nbsp;Ver dados</a></td>
             </tr>
           <?php endforeach; ?>
