@@ -5,7 +5,6 @@ require_once 'interface/ClienteInterface.php';
 class ClientePessoaFisica extends Cliente implements ClienteInterface {
 
   protected $cpf;
-  protected $tipo = "Pessoa Física";
   protected $enderecoCobranca;
   protected $classificacao;
 
@@ -15,10 +14,6 @@ class ClientePessoaFisica extends Cliente implements ClienteInterface {
 
   public function setCpf($cpf){
     $this->cpf = $cpf;
-  }
-
-  public function getTipo(){
-    return $this->tipo;
   }
 
   public function getEnderecoCobranca(){

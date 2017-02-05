@@ -39,7 +39,7 @@
             <tr>
               <td><?php echo $key; ?></td>
               <td><b><?php echo $cliente->getNome(); ?></b></td>
-              <td><b><?php echo $cliente->getTipo(); ?></b></td>
+              <td><b><?php echo ($cliente instanceof ClientePessoaFisica) ? "Pessoa Física" : "Pessoa Jurídica"; ?></b></td>
               <td><a href="fichacliente.php?id=<?php echo $key; ?>" class="btn btn-info"><i class="icon-folder-open"></i>&nbsp;Ver dados</a></td>
             </tr>
           <?php endforeach; ?>

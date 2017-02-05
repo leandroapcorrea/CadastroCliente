@@ -24,7 +24,7 @@
           <td>Nome:</td>
           <td><?php echo $vercliente->getNome(); ?></td>
         </tr>
-        <?php if($vercliente->getTipo() == "Pessoa Física"): ?>
+        <?php if($vercliente instanceof ClientePessoaFisica): ?>
           <tr>
             <td>CPF:</td>
             <td><?php echo $vercliente->getCpf(); ?></td>

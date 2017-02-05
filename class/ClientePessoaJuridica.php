@@ -6,7 +6,6 @@ require_once 'interface/ClienteInterface.php';
 class ClientePessoaJuridica extends Cliente implements ClienteInterface {
 
   protected $cnpj;
-  protected $tipo = "Pessoa Jurídica";
   protected $enderecoCobranca;
   protected $classificacao;
 
@@ -16,10 +15,6 @@ class ClientePessoaJuridica extends Cliente implements ClienteInterface {
 
   public function setCnpj($cnpj){
     $this->cnpj = $cnpj;
-  }
-
-  public function getTipo(){
-    return $this->tipo;
   }
 
   public function getEnderecoCobranca(){

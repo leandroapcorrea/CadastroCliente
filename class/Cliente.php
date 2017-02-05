@@ -3,7 +3,6 @@
 class Cliente {
 
   protected $nome;
-  protected $tipo;
   protected $endereco;
   protected $numero;
   protected $bairro;
@@ -17,14 +16,6 @@ class Cliente {
 
   public function setNome($nome){
     $this->nome = $nome;
-  }
-
-  public function getTipo(){
-    return $this->tipo;
-  }
-
-  public function setTipo($tipo){
-    $this->tipo = $tipo;
   }
 
   public function getEndereco(){
